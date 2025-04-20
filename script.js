@@ -300,6 +300,7 @@ document.addEventListener('DOMContentLoaded', loadNavbar);
 function generateLinks(buttonId) {
     const ipfsGateway = 'https://ipfs.io/ipfs/'; // Can be changed to preferred gateway
     const encodedId = encodeURIComponent(btoa(buttonId));
+    const botName = 'MedoraNd_bot'
     
     return {
         watchDownloadLink: `${ipfsGateway}${encodedId}`,
